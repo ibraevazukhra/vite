@@ -1,11 +1,11 @@
-import './Header.css'
+import './Footer.css'
 import LogoImage from '/public/Header/logo.png'
 import SearchImage from '/public/Header/search.png'
 import CardImage from '/public/Header/card.png'
 import LikeImage from '/public/Header/like.png'
 import {Link} from 'react-router-dom'
 
-export default function Header(){
+export default function Footer(){
 
     return(
         <header>
