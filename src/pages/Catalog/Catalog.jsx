@@ -1,6 +1,6 @@
 import './Catalog.css'
-import ProductImage from '/public/Catalog/product.png'
-import AddCardImage from '/public/Catalog/addcard.png'
+import Card from '../../components/Card/Card'
+
 
 export default function CatalogPage(){
     return(
@@ -17,30 +17,10 @@ export default function CatalogPage(){
                         <a href="" className="categor-btn">Обувь</a>
                     </div>
                     <div className="catalog-catalog">
-                        <div className="catalog-product">
-                            <img src={ProductImage} />
-                            <p className="name">Рубашка СВЭГ</p><br />
-                            <div className="priceandbtn">
-                                <p className="name">9999 руб.</p>
-                                <img className="card-img" src={AddCardImage}/>
-                            </div>
-                        </div>
-                        <div className="catalog-product">
-                            <img src={ProductImage} />
-                            <p className="name">Рубашка СВЭГ</p><br />
-                            <div className="priceandbtn">
-                                <p className="name">9999 руб.</p>
-                                <img className="card-img" src={AddCardImage}/>
-                            </div>
-                        </div>
-                        <div className="catalog-product">
-                            <img src={ProductImage} />
-                            <p className="name">Рубашка СВЭГ</p><br />
-                            <div className="priceandbtn">
-                                <p className="name">9999 руб.</p>
-                                <img className="card-img" src={AddCardImage}/>
-                            </div>
-                        </div>
+                        <Card name="Рубашка 1" price="7000 р" />
+                        <Card name="Рубашка 2" price="8000 р" />
+                        <Card name="Рубашка 3" price="9000 р" />
+                        <Card name="Рубашка 4" price="10000 р" />
                     </div>
                 </div>
             </div>
