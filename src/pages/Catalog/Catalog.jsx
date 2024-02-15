@@ -1,5 +1,6 @@
 import './Catalog.css'
 import Card from '../../components/Card/Card'
+import {catalog} from '../../data.js'
 
 
 export default function CatalogPage(){
@@ -17,10 +18,15 @@ export default function CatalogPage(){
                         <a href="" className="categor-btn">Обувь</a>
                     </div>
                     <div className="catalog-catalog">
-                        <Card name="Рубашка 1" price="7000 р" />
+                        {catalog.map((card) =>{
+                            return(
+                                <Card name={card.name} price={card.price} />
+                            )
+                        })}
+                        {/* <Card name="Рубашка 1" price="7000 р" />
                         <Card name="Рубашка 2" price="8000 р" />
                         <Card name="Рубашка 3" price="9000 р" />
-                        <Card name="Рубашка 4" price="10000 р" />
+                        <Card name="Рубашка 4" price="10000 р" /> */}
                     </div>
                 </div>
             </div>
