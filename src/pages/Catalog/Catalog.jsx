@@ -18,9 +18,9 @@ export default function CatalogPage(){
                         <a href="" className="categor-btn">Обувь</a>
                     </div>
                     <div className="catalog-catalog">
-                        {catalog.map((card) =>{
+                        {catalog.map((card,index) =>{
                             return(
-                                <Card name={card.name} price={card.price} />
+                                <Card key={index} {...card} />
                             )
                         })}
                         {/* <Card name="Рубашка 1" price="7000 р" />
