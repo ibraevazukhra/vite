@@ -1,3 +1,4 @@
+import './Card.css'
 import Button from '../../components/Button/Button'
 import ProductImage from '/public/Catalog/product.png'
 import { Link } from 'react-router-dom'

@@ -1,0 +1,9 @@
+.catalog-product>img{
+    max-width: 100%;
+    width: 400px;
+}
+.search-input{
+    margin: 20px 0;
+    border: 2px solid black;
+    padding: 10px 20px;
+}
