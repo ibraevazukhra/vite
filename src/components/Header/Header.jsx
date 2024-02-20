@@ -21,6 +21,7 @@ export default function Header(){
                             <Link to="/catalog" className="btn-nav">КАТАЛОГ</Link>
                             <p className="palka">|</p>
                             <Link to="/users" className="btn-nav">ПОЛЬЗОВАТЕЛИ</Link>
+                            <Link to="/create" className="btn-nav">ДОБАВЛЕНИЕ</Link>
                         </nav>
                     </div>
                     <div className="right">
