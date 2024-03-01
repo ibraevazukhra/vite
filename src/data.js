@@ -1,26 +1,26 @@
 export const catalog = [
     {
         id:1,
-        name:'Рубашка 1',
-        price:'500р',
-        count:0
+        name:'qweРубашка 1',
+        price:'12500',
+        count:5
     },
     {
         id:2,
         name:'Рубашка 2',
-        price:'600р',
-        count:1
+        price:'600',
+        count:12
     },
     {
         id:3,
         name:'Рубашка 3',
-        price:'1000р',
+        price:'1000',
         count:0
     },
     {
         id:4,
         name:'Рубашка 4',
-        price:'70р',
+        price:'70',
         count:2
     },
 ]

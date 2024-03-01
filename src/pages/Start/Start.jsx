@@ -7,12 +7,12 @@ export default function Start (){
     return(
         <>
         <Banner />
-        {/* <SliderS /> */}
         <br />
         <Accordion title="Вопрос 1" content="Ответы на вопрос 1"/>
         <Accordion title="Вопрос 1" content="Ответы на вопрос 1"/>
         <Accordion title="Вопрос 1" content="Ответы на вопрос 1"/>
         <br />
+        <SliderS />
         </>
         
     )

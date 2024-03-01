@@ -28,7 +28,7 @@ export default function Card ({name,price,id}){
         <img src={ProductImage} />
         <p className="name">{name}</p><br />
         <div className="priceandbtn">
-            <p className="name">{price}</p>
+            <p className="name">{price} руб</p>
             {
                 product.count == 0 ?
                 <>

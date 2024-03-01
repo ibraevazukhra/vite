@@ -35,3 +35,8 @@
     flex-wrap: wrap;
     gap: 30px;
 }
+.sort{
+    margin-left: 30px;
+    background-color: rgb(151, 151, 151);
+    padding: 10px 20px;
+}

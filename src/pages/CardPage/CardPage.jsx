@@ -20,7 +20,7 @@ export default function CardPage (){
                     </div>
                     <div className="right-card">
                         <p className="name">{product.name}</p>
-                        <p className="name">{product.price}</p><br />
+                        <p className="name">{product.price} руб</p><br />
                         <p className="opisanie-txt">В большинстве случаев мужчины для деловой и повседневной жизни выбирают рубашки спокойных оттенков и носят их по всем классическим правилам, где рубашка гораздо светлее пиджака и брюк. При таком подходе выбор цвета сорочки останавливается на белом, цвета шампань или голубом.</p><br />
                         <Button title="В корзину"/>
                     </div>

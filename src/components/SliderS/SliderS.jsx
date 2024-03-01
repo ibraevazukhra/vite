@@ -1,7 +1,7 @@
 import Slider from "react-slick"
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import '../SliderS/SliderS'
+import '../SliderS/SliderS.css'
 import img1 from '/public/SliderS/1s.jpg'
 import img2 from '/public/SliderS/2s.jpg'
 import img3 from '/public/SliderS/3s.jpg'
