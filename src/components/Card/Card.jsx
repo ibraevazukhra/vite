@@ -1,6 +1,7 @@
 import './Card.css'
 import Button from '../../components/Button/Button'
 import ProductImage from '/public/Catalog/product.png'
+import ProductImage2 from '/public/Catalog/product2.png'
 import { Link, useParams } from 'react-router-dom'
 import React, { useState } from 'react';
 import {catalog} from '../../data'

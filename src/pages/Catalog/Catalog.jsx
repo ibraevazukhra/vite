@@ -8,8 +8,11 @@ export default function CatalogPage(){
 
     const[query,setQuery] = useState("")
     const[sorting,setSorting] = useState("")
+    const[category,setCategory] = useState(0)
 
-    const filterProduct = catalog.filter((item) => item.name.toLowerCase().includes(query.toLowerCase()))
+    const filterProduct = catalog.filter((item) => item.name.toLowerCase().includes(query.toLowerCase())
+    &&
+    (item.category == category || category == 0))
 
     function search (e){
         setQuery(e.target.value)
@@ -49,10 +52,10 @@ export default function CatalogPage(){
                         <option value="count_desc">Остаток по количеству</option>
                     </select>
                     <div className="categories">
-                        <a href="" className="categor-btn-active">Всё</a>
-                        <a href="" className="categor-btn">Топ</a>
-                        <a href="" className="categor-btn">Низ</a>
-                        <a href="" className="categor-btn">Обувь</a>
+                        <button onClick={()=>setCategory(0)} className="categor-btn-active">Всe</button>
+                        <button onClick={()=>setCategory(1)} className="categor-btn-active">Мужские</button>
+                        <button onClick={()=>setCategory(2)} className="categor-btn-active">Женские</button>
+
                     </div>
                     <div className="catalog-catalog">
                         {
