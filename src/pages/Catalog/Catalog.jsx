@@ -4,7 +4,7 @@ import {catalog} from '../../data.js'
 import { useState } from 'react'
 
 
-export default function CatalogPage(){
+export default function CatalogPage({addToBasket,basket}){
 
     const[query,setQuery] = useState("")
     const[sorting,setSorting] = useState("")
@@ -62,7 +62,12 @@ export default function CatalogPage(){
                             sortAndFilterProduct.length ?
                             sortAndFilterProduct.map((card,index) =>{
                                 return(
-                                    <Card key={index} {...card} />
+                                    <Card key={index}
+                                    {...card} 
+                                    addCard={
+                                        () => addToBasket([...basket,card.id])
+                                    }
+                                    />
                                 )
                             })
                             :

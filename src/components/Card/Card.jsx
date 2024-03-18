@@ -9,7 +9,7 @@ import Modal from 'react-modal';
 import Modalka from '../Modalka/Modalka'
 
 
-export default function Card ({name,price,id}){
+export default function Card ({name,price,id,addCard}){
       
     const product = catalog.find(product => product.id === parseInt(id))
 
@@ -46,9 +46,12 @@ export default function Card ({name,price,id}){
                     </Modal>
                 </>
                 :
-                <Link to={`${id}`}>
-                    <Button title="В корзину"/>
-                </Link>
+                <>
+                    <button onClick={addCard}><Button title="В корзину"/></button>
+                    <Link to={`${id}`}>
+                        <Button title="Подробнее"/>
+                    </Link>
+                </>
             }
         </div>
     </div>

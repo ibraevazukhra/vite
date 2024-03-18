@@ -26,8 +26,7 @@ export default function Header(){
                     </div>
                     <div className="right">
                         <img src={SearchImage} />
-                        <img src={CardImage} />
-                        <img src={LikeImage} />
+                        <Link to="/basket" className="btn-nav">КОРЗИНА</Link>
                     </div>
                 </div>
             </div>
